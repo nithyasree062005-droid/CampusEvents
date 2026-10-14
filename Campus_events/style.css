@@ -397,3 +397,112 @@ button.btn {
   color: #cbd5e1;
   margin-top: 4px;
 }
+/* ---------- Responsive ---------- */
+
+/* Tablet: up to 900px */
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+}
+
+/* Mobile: up to 600px */
+@media (max-width: 600px) {
+  .container {
+    width: 92%;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 16px;
+    font-size: 13px;
+  }
+
+  .hero {
+    margin-top: 24px;
+    padding: 28px 20px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero-text {
+    font-size: 14px;
+  }
+
+  .events,
+  .categories,
+  .schedule,
+  .register {
+    margin-top: 36px;
+  }
+
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .section-head h2,
+  .section-title {
+    font-size: 20px;
+  }
+
+  .card-grid,
+  .category-list,
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-banner {
+    height: 180px;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 520px;
+  }
+
+  th,
+  td {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .register-box {
+    padding: 20px 16px;
+  }
+
+  .register-box .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .site-footer {
+    margin-top: 40px;
+    padding: 22px 12px;
+  }
+
+  .site-footer p {
+    font-size: 13px;
+  }
+}
