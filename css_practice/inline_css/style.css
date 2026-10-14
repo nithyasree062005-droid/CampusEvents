@@ -1,0 +1,24 @@
+body {
+    font-family: Arial;
+    font-size: 18px;
+    color: rgb(21, 21, 223);
+    background-color: rgb(215, 215, 206);
+}
+
+h1 {
+    color: white;
+    background-color: rgb(79, 79, 171);
+    font-size: 32px;
+}
+
+h2 {
+    color: darkgreen;
+    background-color: rgb(28, 211, 235);
+    font-size: 24px;
+}
+
+p {
+    color: rgb(16, 15, 15);
+    background-color: lightcyan;
+    font-size: 18px;
+}

@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>College Campus Events Registration</title>
+</head>
+<body>
+
+    <h1>College Campus Events</h1>
+    <h2>Student Registration Form</h2>
+
+    <form>
+
+        <label>Student Name:</label>
+        <input type="text" name="name" required>
+        <br><br>
+
+        <label>Register Number:</label>
+        <input type="text" name="register_number" required>
+        <br><br>
+
+        <label>Department:</label>
+        <select name="department" required>
+            <option value="">Select Department</option>
+            <option>Computer Science</option>
+            <option>Information Technology</option>
+            <option>Electronics and Communication</option>
+            <option>Mechanical Engineering</option>
+        </select>
+        <br><br>
+
+        <label>Email Address:</label>
+        <input type="email" name="email" required>
+        <br><br>
+
+        <label>Phone Number:</label>
+        <input type="tel" name="phone"
+               pattern="[0-9]{10}" required>
+        <br><br>
+
+        <label>Select Event:</label>
+        <select name="event" required>
+            <option value="">Select Event</option>
+            <option>Technical Symposium</option>
+            <option>Paper Presentation</option>
+            <option>Quiz Competition</option>
+            <option>Sports Meet</option>
+        </select>
+        <br><br>
+
+        <label>Event Date:</label>
+        <input type="date" name="event_date" required>
+        <br><br>
+
+        <label>Participation Type:</label>
+        <input type="radio" name="participation"
+               value="Individual" required>
+        Individual
+
+        <input type="radio" name="participation"
+               value="Team">
+        Team
+        <br><br>
+
+        <label>Additional Details:</label>
+        <br>
+        <textarea name="details" rows="4" cols="30"></textarea>
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear Form">
+
+    </form>
+
+</body>
+</html>
