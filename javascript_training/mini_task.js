@@ -1,3 +1,5 @@
+/*----basic javascript----*/
+
 //----print your name, course and number
 console.log("Name:Nithyasree");
 console.log("Course:CSBS");
@@ -113,3 +115,76 @@ let reduced = original.reduce(function(sum, num) {
 console.log("Filtered array:", filtered);
 console.log("Mapped array:", mapped);
 console.log("Reduced total:", reduced);
+
+/*---objects----*/
+
+//----create a book object
+let book = {
+    title: "JavaScript",
+    author: "John",
+    price: 200
+};
+book.price = 250;
+console.log(book);
+console.log(book.price);
+
+//-----nested user object
+let user = {
+    name:"Sita",
+    address: {
+        city: "Chennai",
+        state: "Tamilnadu"
+    }
+};
+console.log(user.address.city);
+
+//-----Array of three objects
+let products = [
+    { name: "Laptop", price:10000 },
+    { name: "Mobile", price:5000 },
+    { name: "Headphones", price: 1000}
+];
+
+products.forEach(function(product) {
+    console.log("Product Name:", product.name);
+});
+
+//------destruction
+let students = {
+    name: "Nithyasree",
+    age: 20,
+    city: "Chennai"
+};
+let { name, age, city } = students;
+console.log(name);
+console.log(age);
+
+//-------spread to copy an array
+let arr1 = [1,2,3];
+let arr2 = [4,5,6];
+let copy = [...arr1];
+let combined = [...arr1, ...arr2];
+console.log(copy);
+console.log(combined);
+
+//-----rest parameters
+function add(...numbers) {
+    let total = 0;
+    for (let num of numbers) {
+        total += num;
+}
+    return total;
+}
+console.log(add(10,20));
+console.log(add(10,20,30));
+
+//------optional chaining
+let user1 = {
+    name : "Nithya",
+};
+let city1 = user1.address?.city;
+console.log(city1);
+
+
+
+
