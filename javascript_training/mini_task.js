@@ -26,7 +26,7 @@ if(totalPrice > 200){
 let number = 5;
 if (number > 0) {
     console.log("The number is positive");
-} else if (number = 0) {
+} else if (number === 0) {
     console.log("The number is zero");
 } else {
     console.log("The number is negative");
@@ -44,7 +44,7 @@ for(let i=1; i<=10; i++){
 function calculateTotalPrice(price, quantity) {
     return price * quantity;
 }
-console.log(calculateTotal(100, 3));
+console.log(calculateTotalPrice(100, 3));
 
 //------name and greeeting
 function greet(name) {
@@ -95,7 +95,7 @@ function calculateTotal(price, quantity) {
     return price * quantity;
 }
 
-console.log("Ticket total:", calculateTotal(100, 3));
+console.log("Ticket total:",calculateTotal(100, 3));
 
 //-----original array
 let original = [20, 30, 40];
@@ -172,19 +172,52 @@ function add(...numbers) {
     let total = 0;
     for (let num of numbers) {
         total += num;
-}
+    }
     return total;
 }
 console.log(add(10,20));
 console.log(add(10,20,30));
 
-//------optional chaining
+//-----optional chaining
 let user1 = {
     name : "Nithya",
 };
 let city1 = user1.address?.city;
 console.log(city1);
 
+/*-----scope, hoisting and closure-----*/
 
+//-----global varaible
+var name2 = "Priya";
+function showName() {
+    console.log(name2);
+}
+showName();
 
+//----if block with let and var
+if(true) {
+    let a = 10;
+    var b = 20;
+}
+console.log(b);
 
+//----predict var and let behaviour
+console.log(a);
+var a = 10;
+
+console.log(b);
+let c = 20;
+
+//-----makeCounter()
+function makeCounter() {
+    let count = 0;
+
+    return function () {
+        count++;
+        console.log(count);
+    };
+}
+let counter = makeCounter();
+counter();
+counter();
+counter();
