@@ -255,7 +255,6 @@ function addEvent() {
 document.getElementById("addEventButton")
     .addEventListener("click", addEvent);
 
-
 /*------Events, event listeners and forms------*/
 
 //------Event to update status
