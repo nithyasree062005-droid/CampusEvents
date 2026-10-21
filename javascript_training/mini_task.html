@@ -1,12 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript Mini Tasks</title>
 </head>
 <body>
-    <h1>JavaScript Practice</h1>
+    <h1 id="heading">JavaScript Mini Tasks</h1>
+
+    <section>
+        <h2>Events</h2>
+        <div class="event-card">Campus event</div>
+        <div id="event-list"></div>
+        <button id="addEventButton" type="button">Add event</button>
+    </section>
+
+    <section>
+        <h2>Name</h2>
+        <form id="registerForm">
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text">
+
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email">
+
+            <button id="showNameButton" type="button">Show name</button>
+            <button type="submit">Register</button>
+        </form>
+        <p id="result"></p>
+    </section>
+
+    <section>
+        <h2>Interaction</h2>
+        <button id="btn" type="button">Update status</button>
+        <p id="status"></p>
+
+        <label for="message">Message:</label>
+        <input id="message" type="text">
+        <p>Character count: <span id="count">0</span></p>
+    </section>
+
     <script src="mini_task.js"></script>
 </body>
 </html>
