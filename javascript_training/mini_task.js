@@ -1,5 +1,4 @@
-/*----basic javascript----*/
-
+/*----MOD 1-5 -basic javascript----*/
 //----print your name, course and number
 console.log("Name:Nithyasree");
 console.log("Course:CSBS");
@@ -39,7 +38,7 @@ for (let i = 1; i <= 10; i++) {
     }
 }
 
-/*-----functions and arrays-----*/
+/*-----MOD 6-7 - functions and arrays-----*/
 
 //----calculate total price
 function calculateTotalPrice(price, quantity) {
@@ -100,7 +99,7 @@ console.log("Filtered array:", filtered);
 console.log("Mapped array:", mapped);
 console.log("Reduced total:", reduced);
 
-/*---objects----*/
+/*---MOD 8-9 -objects----*/
 
 //----create a book object
 let book = {
@@ -168,7 +167,7 @@ let user1 = {
 let city1 = user1.address?.city;
 console.log(city1);
 
-/*-----scope, hoisting and closure-----*/
+/*----- MOD 10 - scope, hoisting and closure-----*/
 
 //-----global variable
 var name2 = "Priya";
@@ -203,7 +202,7 @@ counter();
 counter();
 counter();
 
-/*-----DOM------*/
+/*----MOD 11 - DOM------*/
 
 //-----DOM code only in a browser
 if (typeof document !== "undefined") {
@@ -289,7 +288,7 @@ if (name === "" || email === "") {
     });
 }
 
-/*-----callback asynchronous function-----*/
+/*-----MOD 12 - callback asynchronous function-----*/
 
 //-----predict the output
 console.log("one");
