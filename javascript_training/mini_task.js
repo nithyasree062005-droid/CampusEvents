@@ -288,3 +288,27 @@ if (name === "" || email === "") {
         }
     });
 }
+
+/*-----callback asynchronous function-----*/
+
+//-----predict the output
+console.log("one");
+setTimeout(()  => console.log("Two"), 0)
+console.log("Three");
+
+//-------change 0 - 500
+console.log("one");
+setTimeout(() => console.log("Two"), 500);
+console.log("Three");
+
+//------registration form
+console.log("Registration form submitted");
+setTimeout(() => {
+    console.log("Registration successful");
+}, 2000);
+
+//----event loops
+console.log("Start"); // syn code 1 [Start]
+setTimeout(() => console.log("Timer"), 0); // 4 [timer]
+Promise.resolve().then(() => console.log("Promise")); // 3 [promise]
+console.log("Finish"); // syn code 2 [Finish]

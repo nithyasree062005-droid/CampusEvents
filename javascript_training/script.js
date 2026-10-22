@@ -37,7 +37,6 @@ console.log(result);
 
 //----- If else Statement
 let marks = 85;
-
 if (marks >= 90) {
     console.log("Grade A");
 } else if (marks >= 80) {
@@ -82,21 +81,18 @@ console.log(Boolean(""));
 function greet() {
     console.log("Hello World!");
 }
-
 greet();
 
 //----- Parameters and Arguments
 function add(x, y) {
     return x + y;
 }
-
 console.log(add(5, 10)); 
 
 //----- Return Values and console.log 
 function multiply(x, y) {
     return x * y;
 }
-
 let product = multiply(5, 10);
 console.log(product); 
 
@@ -104,29 +100,29 @@ console.log(product);
 const subtract = function(x, y) {
     return x - y;
 };
-
 console.log(subtract(10, 4)); 
 
 //----- Arrow Function 
 const square = (num) => {
     return num * num;
 };
-
 console.log(square(5)); 
 
 //----- Short Arrow Function
 const squareShort = num => num * num;
-
 console.log(squareShort(6)); 
 
 //----- Function Scope 
 let message = "Global variable";
-
 function showMessage() {
     let localMessage = "Local variable";
-
     console.log(message);
     console.log(localMessage);
 }
-
 showMessage();
+
+//------event loops
+console.log("A"); // syn code 1 [A]
+setTimeout(() => console.log("B"), 0); // 4 [B]
+Promise.resolve().then(() => console.log("C")); // 3 [C]
+console.log("D"); // syn code 2 [D] 
