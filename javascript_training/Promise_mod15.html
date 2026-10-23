@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Events</title>
+</head>
+<body>
+    <h1>Upcoming Campus Events</h1>
+
+    <button id="loadBtn">Load Events</button>
+
+    <p id="message"></p>
+    <ul id="eventList"></ul>
+
+    <script>
+        const button = document.getElementById("loadBtn");
+        const message = document.getElementById("message");
+        const eventList = document.getElementById("eventList");
+
+        function loadEvents() {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve([
+                        "Technical Symposium",
+                        "Cultural Fest",
+                        "Sports Day",
+                        "Coding Competition",
+                        "Workshop on Web Development"
+                    ]);
+                }, 2000);
+            });
+        }
+
+        button.addEventListener("click", () => {
+            message.textContent = "Loading events...";
+            eventList.innerHTML = "";
+
+            loadEvents().then((events) => {
+                message.textContent = "Events loaded successfully!";
+
+                events.forEach((event) => {
+                    const li = document.createElement("li");
+                    li.textContent = event;
+                    eventList.appendChild(li);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

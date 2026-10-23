@@ -126,3 +126,45 @@ console.log("A"); // syn code 1 [A]
 setTimeout(() => console.log("B"), 0); // 4 [B]
 Promise.resolve().then(() => console.log("C")); // 3 [C]
 console.log("D"); // syn code 2 [D] 
+
+//------MOD 15 - PROMISES 
+function registerStudent(isSuccessful) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if(isSuccessful) {
+                resolve("Registered confirmed");    
+            } else {
+                reject(new Error("Registered failed"));
+            }
+        },1000);
+    });
+}
+//call and display 
+registerStudent(true)
+    .then((message) => {
+        console.log(message);
+    })
+    .catch((error) => {
+        console.log(error.message);
+    });
+
+ //----MOD 16 - async
+ async function getMessage() {
+     return "Hello";
+ } 
+ getMessage().then((message) => {
+    console.log(message);
+    document.getElementById("async-message").textContent = message;
+ });
+
+ //-----MOD 18 - api's and https
+ async function getPosts(){
+    const response = await fetch (
+      "https://www.w3schools.com/js/js_json.asp"  
+    );
+    if (!response.ok) throw new Error(response.status);
+    const posts = await response.json();
+    console.log(posts);
+ }
+getPosts();
+

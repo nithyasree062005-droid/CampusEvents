@@ -254,7 +254,7 @@ function addEvent() {
 document.getElementById("addEventButton")
     .addEventListener("click", addEvent);
 
-/*------Events, event listeners and forms------*/
+/*------MOD  12 - Events, event listeners and forms------*/
 
 //------Event to update status
 let button = document.getElementById("btn");
@@ -288,7 +288,7 @@ if (name === "" || email === "") {
     });
 }
 
-/*-----MOD 12 - callback asynchronous function-----*/
+/*-----MOD 13 - callback asynchronous function-----*/
 
 //-----predict the output
 console.log("one");
@@ -306,8 +306,10 @@ setTimeout(() => {
     console.log("Registration successful");
 }, 2000);
 
-//----event loops
+/*----MOD 14 - event loops----*/
+
 console.log("Start"); // syn code 1 [Start]
 setTimeout(() => console.log("Timer"), 0); // 4 [timer]
 Promise.resolve().then(() => console.log("Promise")); // 3 [promise]
 console.log("Finish"); // syn code 2 [Finish]
+
