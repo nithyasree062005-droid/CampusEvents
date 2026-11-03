@@ -1,0 +1,32 @@
+.common-textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 12px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+    resize: vertical;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* TextArea Focus */
+.common-textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Placeholder */
+.common-textarea::placeholder {
+    color: #9ca3af;
+}
+
+/* Disabled TextArea */
+.common-textarea:disabled {
+    background-color: #f3f4f6;
+    cursor: not-allowed;
+}

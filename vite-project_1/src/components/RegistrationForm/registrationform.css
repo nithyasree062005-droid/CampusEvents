@@ -1,0 +1,31 @@
+.registration-summary {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  border-radius: 8px;
+  color: #065f46;
+}
+
+.registration-summary h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #047857;
+}
+
+.registration-summary p {
+  margin-bottom: 15px;
+}
+
+.registration-summary ul {
+  padding-left: 20px;
+}
+
+.registration-summary li {
+  margin-bottom: 8px;
+}
+
+.form-error {
+  color: #dc2626;
+  margin-top: 12px;
+}

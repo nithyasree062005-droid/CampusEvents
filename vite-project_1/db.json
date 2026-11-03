@@ -1,0 +1,108 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "React Workshop",
+      "category": "Tech",
+      "date": "2026-11-18",
+      "venue": "Seminar Hall",
+      "description": "Build interactive user interfaces in a hands-on React session."
+    },
+    {
+      "id": 2,
+      "title": "Cultural Day",
+      "category": "Culture",
+      "date": "2026-11-12",
+      "venue": "Open Air Stage",
+      "description": "Celebrate music, dance, art, and cultures from across campus."
+    },
+    {
+      "id": 3,
+      "title": "Sports Meet",
+      "category": "Sports",
+      "date": "2026-11-20",
+      "venue": "College Ground",
+      "description": "Join exciting games and sports competitions with your friends."
+    },
+    {
+      "id": 5,
+      "title": "Hackathon",
+      "category": "Tech",
+      "date": "2026-11-28",
+      "venue": "Innovation Lab",
+      "description": "Build innovative projects with your team in a day-long challenge."
+    }
+  ],
+  "registrations": [
+    {
+      "eventId": 2,
+      "studentName": "nithyasree",
+      "email": "nithyasree@gmail.com",
+      "department": "Computer Science",
+      "year": "2",
+      "attendance": "In person",
+      "accessibilitySupport": true,
+      "message": "",
+      "registeredAt": "2026-11-01T16:19:22.987Z",
+      "id": 1
+    },
+    {
+      "eventId": 1,
+      "studentName": "niyhyasree",
+      "email": "nithyasree@gmail.com",
+      "department": "Computer Science",
+      "year": "2",
+      "attendance": "In person",
+      "accessibilitySupport": true,
+      "message": "timings for the event",
+      "registeredAt": "2026-11-03T06:50:13.137Z",
+      "id": 2
+    },
+    {
+      "name": "nithyasree",
+      "email": "nithi@gmail.com",
+      "department": "Computer Science",
+      "year": "1",
+      "event": "Cultural Day",
+      "attendance": "In person",
+      "accessibilitySupport": true,
+      "message": "timings for the event",
+      "createdAt": "2026-11-03T06:56:57.600Z",
+      "id": 3
+    },
+    {
+      "name": "nithyasree",
+      "email": "nithy@gmail.com",
+      "department": "Information Technology",
+      "year": "2",
+      "event": "Cultural Day",
+      "attendance": "In person",
+      "accessibilitySupport": false,
+      "message": "timings and when will the event occur",
+      "createdAt": "2026-11-03T07:08:02.438Z",
+      "id": 4
+    },
+    {
+      "name": "villa",
+      "email": "nithyasree062005@gmail.com",
+      "department": "Electronics",
+      "year": "4",
+      "event": "Sports Meet",
+      "attendance": "In person",
+      "accessibilitySupport": true,
+      "message": "timings for the evnts",
+      "createdAt": "2026-11-03T07:09:47.974Z",
+      "id": 5
+    }
+  ],
+  "favorites": [
+    {
+      "eventId": 5,
+      "id": 1
+    },
+    {
+      "eventId": 1,
+      "id": 2
+    }
+  ]
+}

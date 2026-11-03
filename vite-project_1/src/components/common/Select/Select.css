@@ -1,0 +1,25 @@
+.common-select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #333333;
+    background-color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Select Focus */
+.common-select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Select Disabled */
+.common-select:disabled {
+    background-color: #f3f4f6;
+    cursor: not-allowed;
+}
